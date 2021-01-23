@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="search.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font: 12px/1 'Montserrat', sans-serif;
+            color: teal;
+            background: teal;
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            display: flex;
+            min-height: 100%;
+        }
+
+        .sidebar {
+            position: absolute;
+            width: 300px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+            background: wheat;
+            box-shadow: 0 0 5px hsl(192, 86%, 11%);
+            transform: translate3d(0, 0, 0);
+            transition: all .3s;
+        }
+
+        .content.content-is-open {
+            margin-left: 220px;
+        }
+
+        .title {
+            font-size: 20px;
+            line-height: 50px;
+            padding-right: 75px;
+            text-align: center;
+            color: teal;
+            border-bottom: 1px solid teal;
+            background: wheat;
+        }
+
+        .nav li a {
+            position: relative;
+            display: block;
+            padding: 15px 15px 15px 50px;
+            font-size: 17px;
+            color: wheat;
+            border-bottom: 1px solid teal;
+        }
+
+        .nav li a:before {
+            font: 20px FontAwesome;
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
+
+        .nav li a.active {
+            box-shadow: inset 5px 0 0 rgb(10, 61, 61), inset 6px 0 0 wheat;
+            background: wheat;
+            color: teal;
+        }
+
+        .nav li:nth-child(1) a:before {
+            content: '\f02d';
+        }
+
+        .nav li:nth-child(2) a:before {
+            content: '\f0c0';
+        }
+
+        .nav li:nth-child(3) a:before {
+            content: '\f08b';
+        }
+
+        .nav li a:hover {
+            box-shadow: inset 5px 0 0 rgb(6, 66, 66), inset 6px 0 0 wheat;
+            background: wheat;
+            color: teal;
+        }
+    </style>
+      <link rel="stylesheet" href="search.css" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img id="logoimg" src="logo.png" alt="logo">
+                <h2><a href="#">coursera</a></h2>
+            </div>
+            <ul class="menu">
+                <li ><a href="Home.html">Home</a></li>
+                <li ><a href="search.html">courses</a></li>
+                <li><a href="Home.html">account</a></li>
+                <li><a class="active" href="payment.html">Payment</a></li>  
+  
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="title">Center Name</div>
+            <ul class="nav">
+                <li>
+                    <a id="c_c" onclick="clk('Center Courses.html','c_c')">All Courses</a>
+                </li>
+                <li>
+                    <a id="s_n" onclick="clk('Students Names.html','s_n')">Students Names</a>
+                </li>
+                <li>
+                    <a id="logout" onclick="window.open('login.html','_self');">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <iframe class="content content-is-open" frameBorder="0" name="theFrame">
+
+        </iframe>
+    </div>
+            <!-- start footer -->
+            <footer>
+                <div class="aboutus">
+                <section id="about">
+                    <header>
+                        <h3>Top Online Courses </h3>
+                    </header>
+                    <p>                    
+                    English
+                    <br>
+                    web Development
+                    <br>
+                    Java 
+                    <br>
+                    Mobile App Development
+                    <br>
+                    Flutter App Development
+                    <br>
+                    Software Reengineering
+                    <br>
+                    Consulting and Prototyping
+                </section>
+                <section id="blogroll">  
+                </section>
+                <section id="popular">
+                    <header>
+                        <h3>
+                            our Solutions</h3>
+                    </header>
+                    <ul>
+                        Centers Service 
+    
+                        <li><a href="#">scheduler sessions</a></li>
+                        <li><a href="#">payment</a></li>
+                        <li><a href="#">scheduler sessions</a></li>
+                        <li><a href="#">scheduler sessions</a></li>
+                        <li><a href="#">scheduler sessions</a></li>
+                        <li><a href="#">Video call Solutions</a></li>
+                        <li><a href="#">scheduler sessions</a></li>
+                        <li><a href="#">scheduler sessions</a></li>
+                    </ul>
+                </section>
+            </div>
+            </footer>
+            <footer class="footer2" >
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <br>   
+                    </div> 
+                <div style="text-align: center;" > Copyright &copy; 2021 </div> 
+    
+            </footer>
+            <!----end footer---->    
+</body>
+<script>
+    function clk(url, id) {
+        window.open(url, "theFrame");
+        var a_elements = document.getElementsByTagName("a");
+        for (el in a_elements) {
+            a_elements[el].className = "";
+        }
+        document.getElementById(id).className = "active";
+    }
+    document.getElementById("c_c").click()
+</script>
+
+</html>

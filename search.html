@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>search courses</title>
+        <link rel="stylesheet" href="search.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="search.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img id="logoimg" src="logo.png" alt="logo">
+                    <h2><a href="#">coursera</a></h2>
+                </div>
+                <ul class="menu">
+                  <li ><a href="Home.html">Home</a></li>
+                  <li ><a href="search.html">courses</a></li>
+                  <li><a href="Home.html">account</a></li>
+                  <li><a class="active" href="payment.html">Payment</a></li>  
+                      
+                </ul>
+            </div>
+            <div class="search-course container" align="right">
+                <!-- <form action="#"> -->
+                    <input id="searchbox" type="text" placeholder="find a course.." name="search">
+                    <button type="submit"><i class="fa fa-search" onclick="search()"></i></button>
+                <!-- </form>     -->
+            </div>
+        </div>
+        <script>
+//            document.getElementById("logoimg").style.height="50px";
+        </script>
+
+        <div class=" container">
+
+            <figure id="fig0" class="course">
+                <a href="#">
+                  <img src="html.png" alt="">
+                </a>
+                <figcaption class="course-description">
+                  <h2 id="course0" class="course-title">
+                      html course
+                  </h2>
+                  <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+                </figcaption>
+
+              </figure>
+            <figure id="fig1" class="course">
+                <a href="#">
+                  <img src="javaScript.png" alt="">
+                </a>
+                <figcaption class="course-description">
+                  <h2 id="course1" class="course-title">
+                    avaScript course
+                  </h2>
+                  <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+                </figcaption>
+            </figure>
+
+            <figure id="fig2" class="course">
+                <a href="#">
+                  <img src="css.png" alt="">
+                </a>
+                <figcaption class="course-description">
+                  <h2 id="course2" class="course-title">
+                      css course
+                  </h2>
+                  <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+                </figcaption>
+            </figure>
+
+            <figure id="fig3" class="course">
+              <a href="#">
+                <img src="php.png" alt="">
+              </a>
+              <figcaption class="course-description">
+                <h2 id="course3" class="course-title">
+                    php course
+                </h2>
+                <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+              </figcaption>
+          </figure>
+
+          <figure id="fig4" class="course">
+            <a href="#">
+              <img src="python.png" alt="">
+            </a>
+            <figcaption class="course-description">
+              <h2 id="course4" class="course-title">
+                  python course
+              </h2>
+              <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+            </figcaption>
+        </figure>
+
+        <figure id="fig5" class="course">
+          <a href="#">
+            <img src="bootstrap.png" alt="">
+          </a>
+          <figcaption class="course-description">
+            <h2 id="course5" class="course-title">
+              bootstrap course
+            </h2>
+            <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+          </figcaption>
+      </figure>
+      
+      <figure id="fig6" class="course">
+        <a href="#">
+          <img src="csharp.png" alt="">
+        </a>
+        <figcaption class="course-description">
+          <h2 id="course6" class="course-title">
+            c# course
+          </h2>
+          <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+        </figcaption>
+    </figure>
+    
+    <figure id="fig7" class="course">
+      <a href="#">
+        <img src="dotnet.png" alt="">
+      </a>
+      <figcaption class="course-description">
+        <h2 id="course7" class="course-title">
+          .net course
+        </h2>
+        <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+      </figcaption>
+  </figure>
+  
+  <figure id="fig8" class="course">
+    <a href="#">
+      <img src="java.png" alt="">
+    </a>
+    <figcaption class="course-description">
+      <h2 id="course8" class="course-title">
+        java course
+      </h2>
+      <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+    </figcaption>
+</figure>
+
+<figure id="fig9" class="course">
+  <a href="#">
+    <img src="jquery.png" alt="">
+  </a>
+  <figcaption class="course-description">
+    <h2 id="course9" class="course-title">
+      jquery course
+    </h2>
+    <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+  </figcaption>
+</figure>
+
+<figure id="fig10" class="course">
+  <a href="#">
+    <img src="cpp.png" alt="">
+  </a>
+  <figcaption class="course-description">
+    <h2 id="course10" class="course-title">
+      c++ course
+    </h2>
+    <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+  </figcaption>
+</figure>
+
+<figure id="fig11" class="course">
+  <a href="#">
+    <img src="nodejs.png" alt="">
+  </a>
+  <figcaption class="course-description">
+    <h2 id="course11" class="course-title">
+      nodejs course
+    </h2>
+    <input class="reserve-btn" type="button" value="reserve" onclick="reserve()">
+  </figcaption>
+</figure>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- start footer -->
+        <footer>
+            <div class="aboutus">
+            <section id="about">
+                <header>
+                    <h3>Top Online Courses </h3>
+                </header>
+                <p>                    
+                English
+                <br>
+                web Development
+                <br>
+                Java 
+                <br>
+                Mobile App Development
+                <br>
+                Flutter App Development
+                <br>
+                Software Reengineering
+                <br>
+                Consulting and Prototyping
+            </section>
+            <section id="blogroll">  
+            </section>
+            <section id="popular">
+                <header>
+                    <h3>
+                        our Solutions</h3>
+                </header>
+                <ul>
+                    Centers Service 
+
+                    <li><a href="#">scheduler sessions</a></li>
+                    <li><a href="#">payment</a></li>
+                    <li><a href="#">scheduler sessions</a></li>
+                    <li><a href="#">scheduler sessions</a></li>
+                    <li><a href="#">scheduler sessions</a></li>
+                    <li><a href="#">Video call Solutions</a></li>
+                    <li><a href="#">scheduler sessions</a></li>
+                    <li><a href="#">scheduler sessions</a></li>
+                </ul>
+            </section>
+        </div>
+        </footer>
+        <footer class="footer2" >
+                <div class="social-links">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <br>   
+                </div> 
+            <div style="text-align: center;" > Copyright &copy; 2021 </div> 
+
+        </footer>
+        <!----end footer---->
+    </body>
+    <link rel="stylesheet" href="normalize.css"/>
+</html>
